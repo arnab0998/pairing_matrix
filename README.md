@@ -1,4 +1,4 @@
-# PairingMatrix - Planet Fitness
+# PairingMatrix - Planet Fitness Data Platform
 
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/ajitsing/pairing_matrix/graphs/commit-activity)
 [![Gem Version](https://badge.fury.io/rb/pairing_matrix.svg)](https://badge.fury.io/rb/pairing_matrix)
