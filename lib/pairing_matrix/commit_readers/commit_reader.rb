@@ -26,7 +26,9 @@ module PairingMatrix
     def authors(since)
         commits = if @config.absent? then [] else read(since) end
         commits.map do |commit|
-          commit.scan(/#{@config.authors_regex}/).flatten.compact.reject(&:empty?).map { |name| name.gsub(' ', '') }.sort.join(',')
+          if commit.include? "|" then
+            commit.split("|").reject { |c| c.empty? }[1].split(",").map { |name| name.gsub(' ', '') }.sort.join(',')
+          end
         end.compact.reject(&:empty?)
     end
 
